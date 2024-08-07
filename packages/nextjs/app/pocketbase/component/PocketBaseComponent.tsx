@@ -239,7 +239,11 @@ const PocketBaseComponent: NextPage = () => {
           />
         </label>
         <button
-          onClick={() => fetchItems(pb!, collection).then(setItems).catch(console.error)}
+          onClick={() =>
+            fetchItems(pb as any, collection)
+              .then(setItems)
+              .catch(console.error)
+          }
           className="btn btn-primary mb-4"
         >
           Fetch Items
