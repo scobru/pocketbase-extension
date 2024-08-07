@@ -309,26 +309,28 @@ const PocketBaseComponent: NextPage = () => {
           isOpen={modalIsOpen}
           onRequestClose={closeModal}
           contentLabel="Create New Item Modal"
-          className="bg-base"
+          className="modal-overlay"
         >
-          <h2 className="text-xl mb-2">Create New Item</h2>
-          {fields.map(field => (
-            <label key={field.name} className="block mb-2">
-              {field.name.charAt(0).toUpperCase() + field.name.slice(1)}:
-              <input
-                type={field.type === "number" ? "number" : field.type === "password" ? "password" : "text"}
-                value={newItem[field.name]}
-                onChange={e => handleInputChange(e, field.name, newItem, setNewItem)}
-                className="input input-bordered w-full my-2"
-              />
-            </label>
-          ))}
-          <button onClick={handleCreateItem} className="btn btn-secondary mb-4">
-            Create Item
-          </button>
-          <button onClick={closeModal} className="btn btn-error mb-4">
-            Cancel
-          </button>
+          <div className="modal-content bg-base rounded-lg p-6 w-96 max-h-screen overflow-y-auto mx-auto">
+            <h2 className="text-xl mb-2">Create New Item</h2>
+            {fields.map(field => (
+              <label key={field.name} className="block mb-2">
+                {field.name.charAt(0).toUpperCase() + field.name.slice(1)}:
+                <input
+                  type={field.type === "number" ? "number" : field.type === "password" ? "password" : "text"}
+                  value={newItem[field.name]}
+                  onChange={e => handleInputChange(e, field.name, newItem, setNewItem)}
+                  className="input input-bordered w-full my-2"
+                />
+              </label>
+            ))}
+            <button onClick={handleCreateItem} className="btn btn-secondary mb-4">
+              Create Item
+            </button>
+            <button onClick={closeModal} className="btn btn-error mb-4">
+              Cancel
+            </button>
+          </div>
         </Modal>
       </div>
       <div className="mb-8 mt-8">
