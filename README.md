@@ -3,14 +3,6 @@
 
 This module provides utility functions for interacting with PocketBase in SE-2, a backend for your next SaaS and Mobile app. It includes functions for authentication, fetching data, and managing collections and items.
 
-## Installation
-
-To use these functions, you need to install PocketBase:
-
-```bash
-npm install pocketbase
-```
-
 ## Usage
 
 Import the functions you need:
