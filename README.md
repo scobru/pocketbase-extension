@@ -1,16 +1,7 @@
-Certainly. To make the markdown file downloadable, I'll provide you with the raw markdown content. You can copy this content and save it as a `.md` file on your local machine. Here's how you can do it:
 
-1. Copy the entire markdown content below.
-2. Open a text editor on your computer (like Notepad, TextEdit, or any code editor).
-3. Paste the copied content into the text editor.
-4. Save the file with a `.md` extension, for example `README.md`.
+# PocketBase Extension for SE-2
 
-Here's the raw markdown content:
-
-```markdown
-# PocketBase Utility Functions
-
-This module provides utility functions for interacting with PocketBase, a backend for your next SaaS and Mobile app. It includes functions for authentication, fetching data, and managing collections and items.
+This module provides utility functions for interacting with PocketBase in SE-2, a backend for your next SaaS and Mobile app. It includes functions for authentication, fetching data, and managing collections and items.
 
 ## Installation
 
